@@ -4,7 +4,7 @@ from django.core.exceptions import ValidationError
 from django.core.validators import BaseValidator
 from django.utils.deconstruct import deconstructible
 
-from webapp.models import Poll, Choice
+from webapp.models import Poll, Choice, Answers
 
 
 @deconstructible
@@ -74,3 +74,8 @@ class PollChoiceForm(forms.ModelForm):
     class Meta:
         model = Choice
         fields = ['choice_text']
+
+class AnswerForm(forms.ModelForm):
+    class Meta:
+        model = Answers
+        fields = ['choice','poll']

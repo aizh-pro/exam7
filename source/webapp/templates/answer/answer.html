@@ -5,7 +5,7 @@
 {% endblock %}
 {% block content %}
     <h1>Answer page</h1>
-      <form action="{% url "select_answer" poll.pk %}" method="post">
+      <form action="{% url "select_answer" poll.pk %}" method="post">{% csrf_token %}
         <p><b>Question:</b> {{ poll.question}}</p>
         <label class="col-sm-2 col-form-label"> Variant
             <select {{ choice.pk}} class="form-control">

@@ -13,6 +13,7 @@
 
     <p><a href="{% url 'poll_update' poll.pk %}"  class="btn btn-warning">Update</a></p>
     <p><a href="{% url 'poll_delete' poll.pk %}" class="btn btn-danger">Delete</a></p>
+     <p><a href="{% url 'select_answer' poll.pk %}" class="btn btn-success">Дать ответ</a></p>
      <hr>
         <h3>Answers</h3>
         {% for choice in choices %}

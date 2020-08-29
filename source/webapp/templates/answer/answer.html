@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Answer{% endblock %}
+{% block menu %}
+
+{% endblock %}
+{% block content %}
+    <h1>Answer page</h1>
+      <form action="{% url "select_answer" poll.pk %}" method="post">
+        <p><b>Question:</b> {{ poll.question}}</p>
+        <label class="col-sm-2 col-form-label"> Variant
+            <select {{ choice.pk}} class="form-control">
+                {% for choice in choices %}
+        <option>{{ choice.choice_text }}</option>
+                 {% endfor %}
+            </select>
+
+        </label>
+              <button type="submit" class="btn btn-primary">Submit</button></form>
+        {% if is_paginated %}
+            {% include 'partial/pagination.html' %}
+        {% endif %}
+{% endblock %}

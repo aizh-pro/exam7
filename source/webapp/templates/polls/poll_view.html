@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}View{% endblock %}
+{% block menu %}
+
+{#     <li><a href="{% url 'task_create' project.pk %}">Create Task</a></li>#}
+{% endblock %}
+{% block content %}
+    <h1>Detailed poll page</h1>
+    <p><b>Question:</b> {{ poll.question}}</p>
+     <p><b>Question id:</b> {{ poll.pk }}</p>
+    <p><b>Created_at:</b>{{ poll.created_at }}</p>
+    <p><b>Updated at:</b> {{ poll.updated_at }}</p>
+
+{#    <p><a href="{% url 'project_update' project.pk %}"  class="btn btn-warning">Update</a></p>#}
+{#    <p><a href="{% url 'project_delete' project.pk %}" class="btn btn-danger">Delete</a></p>#}
+{#     <hr>#}
+{#        <h3>Answers</h3>#}
+{#        {% if is_paginated %}#}
+{#            {% include 'partial/pagination.html' %}#}
+{#        {% endif %}#}
+{#        {% for choice in choices %}#}
+{#            <div class="box">#}
+{#                 <h4><a href="{% url 'task_view' task.pk %}">{{ task.pk }}.{{ task.title }}</a></h4>#}
+{#                <p>choice.text</p>#}
+{#            </div>#}
+{#        {% empty %}#}
+{#            <p>Нет вариантов</p>#}
+{#        {% endfor %}#}
+{#        {% if is_paginated %}#}
+{#            {% include 'partial/pagination.html' %}#}
+{#        {% endif %}#}
+{#      </div>#}
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+   <h1>Polls</h1>
+    {% if is_paginated %}
+   {% include 'partial/pagination.html' %}
+    {% endif %}
+   {% for poll in polls %}
+        <h2><a href="{% url 'poll_view' poll.pk %}">{{ poll.pk }}.{{ poll.question }}</a></h2>
+    <p><a href="{% url 'poll_view' poll.pk %}">Подробнее</a></p>
+   {% endfor %}
+      {% if is_paginated %}
+   {% include 'partial/pagination.html' %}
+    {% endif %}
+{% endblock %}

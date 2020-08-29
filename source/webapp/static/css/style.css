@@ -11,7 +11,7 @@ body {
 }
 .navbar {
     display: block;
-    background: #6a7dff;
+    background: #79346F;
     position: fixed;
     top: 0;
     right: 0;
@@ -89,20 +89,20 @@ body {
 
 .pagination a, .pagination .page-disabled {
     display: inline-block;
-    border: solid 1px #6a7ddd;
+    border: solid 1px #79346F;
     border-radius: 3px;
     padding: 5px;
     margin: 3px;
 }
 
 .pagination a {
-    background: #6a7ddd;
+    background: #79346F;
     color: white;
     text-decoration: none;
 }
 
 .pagination a:hover {
-    background: #6a7dff;
+    background: #79346F;
     text-decoration: underline;
 }
 

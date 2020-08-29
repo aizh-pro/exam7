@@ -15,3 +15,6 @@ class AnswerView(TemplateView):
        context['poll'] = poll
        context['choices'] = choices
        return context
+
+
+

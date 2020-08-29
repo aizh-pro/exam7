@@ -1,0 +1,166 @@
+[
+{
+  "model": "webapp.poll",
+  "pk": 1,
+  "fields": {
+    "question": "Do you like Python?",
+    "created_at": "2020-08-29T06:08:43.790Z",
+    "updated_at": "2020-08-29T06:08:43.790Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 2,
+  "fields": {
+    "question": "Do you like Django",
+    "created_at": "2020-08-29T06:09:05.522Z",
+    "updated_at": "2020-08-29T06:09:07.503Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 4,
+  "fields": {
+    "question": "Are you sure?",
+    "created_at": "2020-08-29T07:46:12.491Z",
+    "updated_at": "2020-08-29T07:46:12.491Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 5,
+  "fields": {
+    "question": "jhjhjkhjkjkhhjk*",
+    "created_at": "2020-08-29T07:46:59.031Z",
+    "updated_at": "2020-08-29T07:46:59.031Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 6,
+  "fields": {
+    "question": "gofdgdgjdfkljg",
+    "created_at": "2020-08-29T07:47:09.831Z",
+    "updated_at": "2020-08-29T07:47:09.831Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 7,
+  "fields": {
+    "question": "dgdgdgdg",
+    "created_at": "2020-08-29T07:47:20.306Z",
+    "updated_at": "2020-08-29T07:47:20.306Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 8,
+  "fields": {
+    "question": "ghghjkjhkfgk",
+    "created_at": "2020-08-29T07:50:39.255Z",
+    "updated_at": "2020-08-29T07:50:39.255Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 9,
+  "fields": {
+    "question": "\u044b\u0432\u0441\u044b\u0432\u0441\u044b\u0432\u0441",
+    "created_at": "2020-08-29T07:59:42.040Z",
+    "updated_at": "2020-08-29T07:59:42.040Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 10,
+  "fields": {
+    "question": "svsfv",
+    "created_at": "2020-08-29T07:59:49.027Z",
+    "updated_at": "2020-08-29T07:59:49.027Z"
+  }
+},
+{
+  "model": "webapp.poll",
+  "pk": 11,
+  "fields": {
+    "question": "asdasdasdsd",
+    "created_at": "2020-08-29T08:00:00.675Z",
+    "updated_at": "2020-08-29T08:00:00.675Z"
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 1,
+  "fields": {
+    "choice_text": "Yes",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 2,
+  "fields": {
+    "choice_text": "No",
+    "poll": 1
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 3,
+  "fields": {
+    "choice_text": "Of course",
+    "poll": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 4,
+  "fields": {
+    "choice_text": "Yep",
+    "poll": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 5,
+  "fields": {
+    "choice_text": "I don't know",
+    "poll": 2
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 9,
+  "fields": {
+    "choice_text": "sscs",
+    "poll": 7
+  }
+},
+{
+  "model": "webapp.choice",
+  "pk": 10,
+  "fields": {
+    "choice_text": "sssx",
+    "poll": 7
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$cVeABe7JNBsX$YyLYOT837TeNlztv0NXi7U0UM+bGmZUGsK0aWyA5Fm0=",
+    "last_login": "2020-08-29T06:07:31.769Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-08-29T06:07:06.196Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

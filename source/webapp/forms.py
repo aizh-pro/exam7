@@ -4,7 +4,7 @@ from django.core.exceptions import ValidationError
 from django.core.validators import BaseValidator
 from django.utils.deconstruct import deconstructible
 
-from webapp.models import Poll
+from webapp.models import Poll, Choice
 
 
 @deconstructible
@@ -69,3 +69,8 @@ class SimpleSearchForm(forms.Form):
 #         return cleaned_data
 
 
+
+class PollChoiceForm(forms.ModelForm):
+    class Meta:
+        model = Choice
+        fields = ['choice_text']

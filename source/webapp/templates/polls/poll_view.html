@@ -12,7 +12,7 @@
     <p><b>Updated at:</b> {{ poll.updated_at }}</p>
 
     <p><a href="{% url 'poll_update' poll.pk %}"  class="btn btn-warning">Update</a></p>
-{#    <p><a href="{% url 'project_delete' project.pk %}" class="btn btn-danger">Delete</a></p>#}
+    <p><a href="{% url 'poll_delete' poll.pk %}" class="btn btn-danger">Delete</a></p>
 {#     <hr>#}
 {#        <h3>Answers</h3>#}
 {#        {% if is_paginated %}#}

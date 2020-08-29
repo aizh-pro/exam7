@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Delete{% endblock %}
+
+{% block menu %}
+    <li><a href="{% url 'poll_view' poll.pk %}">Отмена</a></li>
+{% endblock %}
+
+{% block content %}
+    <h3>Вы уверены, что хотите удалить этот вопрос "{{ poll.question }}"?</h3>
+    <p>Created at {{ poll.created_at }} </p>
+    <form action="{% url "poll_delete" poll.pk %}" method="post">
+        {% csrf_token %}
+        <p><input class="btn btn-danger" type="submit" value="Удалить"></p>
+        <a href="{% url 'poll_view' poll.pk  %}" class="btn btn-primary" role="button" aria-pressed="true">Отмена</a>
+    </form>
+{% endblock %}

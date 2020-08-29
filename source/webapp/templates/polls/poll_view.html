@@ -18,6 +18,8 @@
         {% for choice in choices %}
             <div class="box">
                  <h4>{{ choice.pk }}.{{ choice.choice_text }}</h4>
+             <p><a href="{% url 'choice_update' choice.pk %}"  class="btn btn-warning">Update</a></p>
+            <p><a href="{% url 'choice_delete' choice.pk %}" class="btn btn-danger">Delete</a></p>
             </div>
         {% empty %}
             <p>Нет вариантов</p>
